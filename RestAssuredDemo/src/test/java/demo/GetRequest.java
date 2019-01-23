@@ -25,9 +25,15 @@ public class GetRequest {
 	
 	System.out.println("Body of the Given Api is " +body);
 	 
-	 int statusCode = response.getStatusCode();
-	 System.out.println(statusCode);
-	 Assert.assertEquals(String.valueOf(statusCode), "200");
+	// int statusCode = response.getStatusCode();
+	
+	 String statusLine = response.getStatusLine();
+	// System.out.println(statusCode);
+	 
+	 System.out.println(statusLine);
+	// Assert.assertEquals(String.valueOf(statusCode), "200");
+	 
+	 Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
 	 
  }
 
