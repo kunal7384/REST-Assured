@@ -1,6 +1,7 @@
 package demo;
 
 import org.json.simple.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
@@ -32,10 +33,15 @@ public class PostRequest {
 	       Response res= requestparam.post("/register");
 	       
 	        String resBody= res.body().asString();
+	      // String resBody= res.getBody().asString();
 	        
 	        System.out.println("Responce of the Body is " +resBody);
-		
+	        
+	        int statusCode = res.getStatusCode();
+	        System.out.println(statusCode);
+	        Assert.assertEquals(statusCode, 201); 
 		
 	}
-
+		
+		
 }
