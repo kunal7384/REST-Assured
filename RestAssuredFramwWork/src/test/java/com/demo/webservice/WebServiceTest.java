@@ -30,7 +30,7 @@ public class WebServiceTest {
 	
 	requestSpecification.contentType(ContentType.JSON);
 	
-	Response response  = requestSpecification.post(Uri);
+	Response response  = requestSpecification.get(Uri);
 	
 	return response;	
 		
@@ -44,7 +44,7 @@ public class WebServiceTest {
 	
 	requestSpecification.contentType(ContentType.JSON);
 	
-	Response response  = requestSpecification.post(Uri);
+	Response response  = requestSpecification.put(Uri);
 	
 	return response;	
 		
@@ -59,7 +59,7 @@ public class WebServiceTest {
 	
 	requestSpecification.contentType(ContentType.JSON);
 	
-	Response response  = requestSpecification.post(Uri);
+	Response response  = requestSpecification.delete(Uri);
 	
 	return response;	
 		
