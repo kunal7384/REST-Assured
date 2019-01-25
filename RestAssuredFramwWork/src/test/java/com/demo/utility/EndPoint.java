@@ -4,7 +4,7 @@ public enum EndPoint {
 	
 	ADD_TITLE("/posts"),
 	
-	GET_TITLE("/posts/id");
+	GET_TITLE("/posts/");
 	
 	String resourcePath;
 	
@@ -31,5 +31,7 @@ public enum EndPoint {
 		
 	}
 	
-	
+	public static void main(String[] args) {
+		System.out.println(URL.fixUrl+GET_TITLE.getResouecePath("1")); 
+	}
 }
