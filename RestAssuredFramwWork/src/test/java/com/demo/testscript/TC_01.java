@@ -87,7 +87,7 @@ public class TC_01 {
 			Assert.assertEquals(titlee, titletest.getTitle());
 			
 			Assert.assertEquals(author, titletest.getAuthor());
-			
+			System.out.println("Done");
 			}
 	}
 	
