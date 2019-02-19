@@ -2,13 +2,16 @@ package com.demo.testscript;
 
 import java.util.ArrayList;
 
+
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.demo.pojo.AddTitle;
 import com.demo.pojo.TittleTest;
+
 import com.demo.utility.EndPoint;
 import com.demo.utility.URL;
 import com.demo.webservice.WebServiceTest;
@@ -41,7 +44,7 @@ public class TC_01 {
 	
 	public void gettestId()
 	{
-	String url = URL.fixUrl+EndPoint.GET_TITLE.getResouecePath()	;
+	String url = URL.fixUrl+EndPoint.ADD_TITLE.getResouecePath()	;
 		
 	System.out.println(url);
 		responce = WebServiceTest.getMethod(url);
@@ -91,6 +94,33 @@ public class TC_01 {
 			}
 	}
 	
+	@Test(priority=3 , dataProvider="addingdata")
+	public void postDataMethod(String json , String ttitle , String aauthor)
+	{
+		String url = URL.fixUrl+EndPoint.ADD_TITLE.getResouecePath();
+		
+		System.out.println(url);
+		responce = WebServiceTest.postMethod(url, json);
+		Gson gson = new GsonBuilder().create();
+		AddTitle addtitle;
+		
+		System.out.println(responce.getStatusCode());
+		System.out.println(responce.getBody().asString());
+		if(responce.getStatusCode()==201)
+		{
+			
+			addtitle = gson.fromJson(responce.getBody().asString(), AddTitle.class);
+			
+			Assert.assertEquals(ttitle, addtitle.getTitle());
+			Assert.assertEquals(aauthor, addtitle.getAuthor());
+			
+		}
+		
+	
+	}
+	
+	
+	
 	@DataProvider(name="dataApi")
 	public Object[][] getIdVerification()
 	{
@@ -106,6 +136,26 @@ public class TC_01 {
 		
 	}
 	return result;	
+	}
+	
+	
+	
+	@DataProvider(name ="addingdata")
+	
+	public Object[][] postData()
+	{
+		Object[][] postdata = new Object[2][3];
+		
+		postdata[0][0] = " { \"id\": 9, \"title\": \"Pravin\", \"author\": \"pp\" }";
+		postdata[0][1] = "Pravin";
+		postdata[0][2] = "pp";
+		
+		postdata[1][0] = " { \"id\": 10, \"title\": \"Mayank\", \"author\": \"mpp\" }";
+		postdata[1][1] = "Mayank";
+		postdata[1][2] = "mpp";
+		
+		return postdata;
+		
 	}
 }
 /*@Test(priority=2)
