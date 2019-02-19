@@ -94,7 +94,7 @@ public class TC_01 {
 			}
 	}
 	
-	@Test(priority=3 , dataProvider="addingdata")
+//	@Test(priority=3 , dataProvider="addingdata")
 	public void postDataMethod(String json , String ttitle , String aauthor)
 	{
 		String url = URL.fixUrl+EndPoint.ADD_TITLE.getResouecePath();
@@ -119,8 +119,23 @@ public class TC_01 {
 	
 	}
 	
-	
-	
+	@Test(priority=4 , dataProvider="updatingdata")
+	public void putDataMethod(String json)
+	{
+		String url = URL.fixUrl+EndPoint.GET_TITLE.getResouecePath("9");
+		
+		responce = WebServiceTest.putMethod(url, json);
+		
+		System.out.println("Put Method"+responce.getStatusCode());
+		
+		if(responce.getStatusCode()==200)
+		{
+		System.out.println("Sucessfully Updated");	
+		
+		Assert.assertTrue(true);
+			
+		}
+	}
 	@DataProvider(name="dataApi")
 	public Object[][] getIdVerification()
 	{
@@ -157,6 +172,18 @@ public class TC_01 {
 		return postdata;
 		
 	}
+	
+	@DataProvider(name ="updatingdata")
+	
+	public Object[][] updateData()
+	{
+		Object[][] updatedata = new Object[1][1];
+		
+	
+		updatedata[0][0] = " { \"id\": 9, \"title\": \"Pravin\", \"author\": \"pch\" }";
+		return updatedata;
+	}
+	
 }
 /*@Test(priority=2)
 	
