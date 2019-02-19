@@ -119,7 +119,7 @@ public class TC_01 {
 	
 	}
 	
-	@Test(priority=4 , dataProvider="updatingdata")
+	//@Test(priority=4 , dataProvider="updatingdata")
 	public void putDataMethod(String json)
 	{
 		String url = URL.fixUrl+EndPoint.GET_TITLE.getResouecePath("9");
@@ -135,6 +135,27 @@ public class TC_01 {
 		Assert.assertTrue(true);
 			
 		}
+	}
+	
+	@Test(priority=5)
+	public void deleteData()
+	{
+		
+		String url = URL.fixUrl+EndPoint.GET_TITLE.getResouecePath("10");
+		responce= WebServiceTest.deleteMethod(url);
+		
+		System.out.println("Delete Method "+responce.getStatusCode());
+		
+		if(responce.getStatusCode()==200)
+		{
+			
+			System.out.println("Deleted Sucessfully");
+			Assert.assertTrue(true);
+			
+		}
+		
+		
+		
 	}
 	@DataProvider(name="dataApi")
 	public Object[][] getIdVerification()
