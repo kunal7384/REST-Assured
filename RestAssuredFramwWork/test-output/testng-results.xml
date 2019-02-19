@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2299" started-at="2019-02-19T11:08:56Z" finished-at="2019-02-19T11:08:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2299" started-at="2019-02-19T11:08:56Z" finished-at="2019-02-19T11:08:58Z">
+      <class name="com.demo.testscript.TC_01">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.demo.testscript.TC_01@26be92ad]" name="setUp" is-config="true" duration-ms="15" started-at="2019-02-19T11:08:56Z" finished-at="2019-02-19T11:08:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="gettestId()[pri:1, instance:com.demo.testscript.TC_01@26be92ad]" name="gettestId" duration-ms="1897" started-at="2019-02-19T11:08:56Z" finished-at="2019-02-19T11:08:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gettestId -->
+        <test-method status="PASS" signature="verifyIdData(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.demo.testscript.TC_01@26be92ad]" name="verifyIdData" duration-ms="48" started-at="2019-02-19T11:08:58Z" data-provider="dataApi" finished-at="2019-02-19T11:08:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[json-server]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[typicode]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIdData -->
+        <test-method status="PASS" signature="verifyIdData(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.demo.testscript.TC_01@26be92ad]" name="verifyIdData" duration-ms="44" started-at="2019-02-19T11:08:58Z" data-provider="dataApi" finished-at="2019-02-19T11:08:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kunal]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[kd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIdData -->
+        <test-method status="PASS" signature="verifyIdData(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.demo.testscript.TC_01@26be92ad]" name="verifyIdData" duration-ms="52" started-at="2019-02-19T11:08:58Z" data-provider="dataApi" finished-at="2019-02-19T11:08:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mittal]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mis]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIdData -->
+        <test-method status="PASS" signature="verifyIdData(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.demo.testscript.TC_01@26be92ad]" name="verifyIdData" duration-ms="32" started-at="2019-02-19T11:08:58Z" data-provider="dataApi" finished-at="2019-02-19T11:08:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jigar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jka]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIdData -->
+        <test-method status="PASS" signature="verifyIdData(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.demo.testscript.TC_01@26be92ad]" name="verifyIdData" duration-ms="28" started-at="2019-02-19T11:08:58Z" data-provider="dataApi" finished-at="2019-02-19T11:08:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mukesh]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mp]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIdData -->
+        <test-method status="PASS" signature="verifyIdData(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.demo.testscript.TC_01@26be92ad]" name="verifyIdData" duration-ms="31" started-at="2019-02-19T11:08:58Z" data-provider="dataApi" finished-at="2019-02-19T11:08:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Akansha]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ash]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIdData -->
+        <test-method status="PASS" signature="verifyIdData(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.demo.testscript.TC_01@26be92ad]" name="verifyIdData" duration-ms="37" started-at="2019-02-19T11:08:58Z" data-provider="dataApi" finished-at="2019-02-19T11:08:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Akshay]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[akk]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIdData -->
+        <test-method status="PASS" signature="verifyIdData(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.demo.testscript.TC_01@26be92ad]" name="verifyIdData" duration-ms="32" started-at="2019-02-19T11:08:58Z" data-provider="dataApi" finished-at="2019-02-19T11:08:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Abhilash]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[amu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIdData -->
+        <test-method status="PASS" signature="verifyIdData(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.demo.testscript.TC_01@26be92ad]" name="verifyIdData" duration-ms="38" started-at="2019-02-19T11:08:58Z" data-provider="dataApi" finished-at="2019-02-19T11:08:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pravin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pch]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIdData -->
+      </class> <!-- com.demo.testscript.TC_01 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
